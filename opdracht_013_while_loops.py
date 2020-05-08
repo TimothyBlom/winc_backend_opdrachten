@@ -255,12 +255,25 @@ sorterOnLenght = sorted(all_countries, key=len)
 print("Dict sorted on length:", sorterOnLenght)
 
 shortestWord = min(all_countries, key=len)
-print("Shortest word in the dict is:", shortestWord)
+print("Shortest word is:", shortestWord)
 
-#loop en bekijk per land de lengte en of die gelijk is aan het kortste woord en print het
+shortestNameCountries = []
+count = 0
+while len(sorterOnLenght[count]) == len(sorterOnLenght[0]):
+    shortestNameCountries.append({sorterOnLenght[count]})
+    count += 1
 
-#opdracht 2
+print("Only the shortest names:", shortestNameCountries)
+
+#for loop van opdracht 1
+shortestNameCountries2 = []
+count2 = 0
+
+
+#opdracht 2 
 longestWord = max(all_countries, key=len)
-print("Longest word in the dict is:", longestWord)
+print("Longest word is:", longestWord)
+
+#loop en pak de 3 langste landen en print die
 
 #opdracht 3
